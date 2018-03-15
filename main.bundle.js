@@ -1291,8 +1291,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ZzaRepositoryService = /** @class */ (function () {
     function ZzaRepositoryService() {
         var _this = this;
-        this._em = new __WEBPACK_IMPORTED_MODULE_1_breeze_client__["EntityManager"]('http://localhost:10942/breeze/zza');
-        // private _em: EntityManager = new EntityManager('https://skimediczzademowebapi.azurewebsites.net/breeze/zza');
+        // private _em: EntityManager = new EntityManager('http://localhost:10942/breeze/zza');
+        this._em = new __WEBPACK_IMPORTED_MODULE_1_breeze_client__["EntityManager"]('https://skimediczzademowebapi.azurewebsites.net/breeze/zza');
         this._customersCached = false;
         __WEBPACK_IMPORTED_MODULE_2__model_registration_helper__["a" /* RegistrationHelper */].register(this._em.metadataStore);
         this._em.entityChanged.subscribe(function (args) {
